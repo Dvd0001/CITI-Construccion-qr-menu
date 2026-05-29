@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITI - Menú QR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            max-width: 280px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1a2a5e;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 18px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-website {
+            background: linear-gradient(135deg, #1a2a5e 0%, #2c3e50 100%);
+            color: white;
+        }
+
+        .btn-website:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(26, 42, 94, 0.3);
+        }
+
+        .btn-instagram {
+            background: linear-gradient(135deg, #E1306C 0%, #C13584 100%);
+            color: white;
+        }
+
+        .btn-instagram:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(225, 48, 108, 0.3);
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .btn {
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+
+            .logo img {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Logo_citi_2026_FINAL.png" alt="CITI Logo">
+        </div>
+
+        <h1>CITI</h1>
+        <p class="subtitle">Construcción Integral y Tecnología Interactiva</p>
+
+        <div class="menu">
+            <a href="https://citi-mex.com/" class="btn btn-website" target="_blank">
+                🌐 Visitar Sitio Web
+            </a>
+            <a href="https://www.instagram.com/citi_construccion?utm_source=qr" class="btn btn-instagram" target="_blank">
+                📱 Seguir en Instagram
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Escanea este código QR para acceder al menú</p>
+        </div>
+    </div>
+</body>
+</html>
